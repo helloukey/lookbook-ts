@@ -1,0 +1,65 @@
+.container {
+    z-index: 1000;
+    position: fixed;
+    bottom: -25px;
+    left: 25px;
+    right: 25px;
+    font-family: 'Changa', sans-serif;
+    color: #EEE;
+    font-size: 14px;
+}
+
+.names_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.char_container {
+    min-width: 100px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.box {
+    width: 4px;
+    height: 12px;
+    background-color: #EEE;
+    transition: all 0.5s ease-out;
+}
+
+.active_box {
+    width: 30px;
+}
+
+.text {
+    opacity: 0;
+    transition: all 0.8s ease-out 0.1s;
+}
+
+.active_text {
+    opacity: 1;
+}
+
+/* Medai Queries */
+@media (max-width: 850px) {
+    .container {
+        left: 0px;
+        right: 0px;
+    }
+    .char_container {
+        flex-direction: column-reverse;
+        min-width: 10%;
+        gap: 4px;
+    }
+    .text {
+        position: absolute;
+        top: -30px;
+    }
+}

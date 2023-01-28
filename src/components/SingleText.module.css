@@ -1,0 +1,33 @@
+.container {
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #EEE;
+    font-family: 'Risque', cursive;
+}
+
+.text1 {
+    width: 80vw;
+    height: 150px;
+    font-size: 12vw;
+    text-align: center;
+    overflow: hidden;
+}
+.text2 {
+    width: 85vw;
+    height: 200px;
+    font-size: 13vw;
+    text-align: center;
+    overflow: hidden;
+}
+.text3 {
+    width: 90vw;
+    height: fit-content;
+    font-size: 14vw;
+    text-align: center;
+    overflow: hidden;
+}

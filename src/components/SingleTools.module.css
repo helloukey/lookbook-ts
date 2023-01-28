@@ -1,0 +1,64 @@
+.container {
+    width: 60vw;
+    height: 60vh;
+    position: fixed;
+    z-index: 2000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3000;
+}
+
+.asset1 {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    transform: rotateY(0deg);
+	animation: rotateAnimation 1s linear infinite;
+    transform-style: preserve-3d;
+}
+.asset2 {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    transform: rotateY(0deg);
+	animation: rotateAnimation 1s linear infinite;
+    transform-style: preserve-3d;
+}
+
+@keyframes rotateAnimation {
+	from {transform: rotateY(0deg);}
+	to {transform: rotateY(360deg);}
+}
+
+.mintDate {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: #EEE;
+    font-family: 'Changa', sans-serif;
+    font-weight: 600;
+}
+
+.collection {
+    position: absolute;
+    right: -10px;
+    bottom: -40px;
+    color: #EEE;
+    font-family: 'Changa', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5px 25px;
+    border: 1px solid rgba(255,255,255,0.5);
+    cursor: pointer;
+    z-index: 6000;
+}
+
+@media (max-width: 850px) {
+    .asset1 {
+        scale: 0.6;
+    }
+    .asset2 {
+        scale: 0.6
+    }
+}
