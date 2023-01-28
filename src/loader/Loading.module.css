@@ -1,0 +1,70 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #222;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marquee_container {
+    position: absolute;
+    color: #EEE;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    font-size: 12rem;
+    white-space: nowrap;
+    animation-name: text_animation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.text {
+    display: inline-block;
+    margin: 8px 40px;
+}
+
+.logo {
+    z-index: 100;
+}
+
+.title {
+    font-size: 5rem;
+    color: #EEE;
+    font-family: 'Risque', cursive;
+    position: absolute;
+    transform: translateY(180px);
+}
+
+.progress {
+    position: fixed;
+    scale: 0.05;
+    top: -100px;
+    left: 0px;
+    right: 0px;
+}
+
+.loading_text {
+    position: fixed;
+    color: #EEE;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    z-index: 100;
+    bottom: 100px;
+    transform: translateX(100px);
+}
+
+@keyframes text_animation {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(-20%);
+    }
+}

@@ -1,0 +1,28 @@
+.opening_container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.opening_left {
+    position: absolute;
+    width: 100vw;
+    height: 0;
+    border-top: 75vw solid #111;
+    border-right: 75vw solid transparent;
+    opacity: 0;
+}
+
+.opening_right {
+    position: absolute;
+    width: 100vw;
+    height: 0;
+    border-bottom: 75vw solid #111;
+    border-left: 75vw solid transparent;
+    opacity: 0;
+}
