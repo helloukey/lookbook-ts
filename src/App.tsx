@@ -29,7 +29,7 @@ function App(): JSX.Element {
       {/* Show main content only when DOM is loaded */}
       {isLoaded && (
         <>
-          {/* <Background color={colors[current]} /> */}
+          <Background color={colors[current]} />
           <Header />
           <Social />
           <Single />
